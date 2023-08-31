@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>New App</title>
+        <link rel="stylesheet" href="style.css">
+        <!-- footer  -->
+        <link rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+            integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+            crossorigin="anonymous" referrerpolicy="no-referrer" />
+    </head>
+    <body>
+        <!-- /* navigation bar */ -->
+        <nav>
+            <div class="main-nav container flex">
+                <a href="#home" onclick="reload()" class="company-logo">
+                    <img src="./Assets/Logo.png" alt>
+                </a>
+                <div class="nav-links">
+                    <ul class="flex">
+                        <li class="hover-link nav-item" id="cricket"
+                            onclick=" onNavItemClick('cricket')">Cricket</li>
+                        <li class="hover-link nav-item" id="finance"
+                            onclick=" onNavItemClick('finance')">Finance</li>
+                        <li class="hover-link nav-item" id="politics"
+                            onclick=" onNavItemClick('politics')">Politics</li>
+                        <li class="hover-link nav-item" id="technology"
+                            onclick=" onNavItemClick('technology')">Technology</li>
+                    </ul>
+                </div>
+                <div class="search-bar">
+                    <input id="search-text" type="text" class="news-input"
+                        placeholder="e.g. science">
+                    <button id="search-button" class="search-button">Search</button>
+                </div>
+            </div>
+        </nav>
+        <!-- /* End of navbar */ -->
+
+        <!-- /* main */ -->
+        <main>
+            <div class="cards-container container flex" id="cards-container">
+                
+        </main>
+        <template id="template-news-card">
+            <div class="card">
+                <div class="card-header">
+                    <img src="https://via.placeholder.com/400x200"
+                        alt="news-image" id="news-img">
+                </div>
+                <div class="card-content">
+                    <h3 id="news-title">This is the Title</h3>
+                    <h6 class="news-source" id="news-source">End Gadget
+                        05/07/2023</h6>
+                    <p class="news-desc" id="news-desc">Lorem ipsum dolor
+                        sit amet consectetur adipisicing elit. Sequi
+                        repellat, laudantium a, dolorem omnis tempora
+                        repudiandae numquam, odit voluptas corrupti
+                        excepturi! Veniam soluta ab possimus accusamus
+                        consequatur officiis autem vitae.</p>
+                </div>
+            </div>
+
+        </template>
+        <!-- footer -->
+        <!-- <footer>
+            <div class="footerContainer">
+                <div class="socialIcons">
+                    <a href><i class="fa-brands  fa-facebook"></i></a>
+                    <a href><i class="fa-brands  fa-instagram"></i></a>
+                    <a href><i class="fa-brands  fa-twitter"></i></a>
+                    <a href><i class="fa-brands  fa-google-plus"></i></a>
+                    <a href><i class="fa-brands  fa-youtube"></i></a>
+                </div>
+                <div class="footerNav">
+                    <ul>
+                        <li><a href id="home">Home</a></li>
+                        <li><a href>News</a></li>
+                        <li><a href>Cricket</a></li>
+                        <li><a href>IPL</a></li>
+                        <li><a href>Politics</a></li>
+                    </ul>
+                </div>
+                <div class="footerBotton">
+                    <p>Copyright &copy: 2023; Designed by <span class="designed">AVINASH
+                            KUMAR</span></p>
+                </div>
+            </div>
+
+        </footer> -->
+
+        <script src="script.js"></script>
+    </body>
+</html>
